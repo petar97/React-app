@@ -43,7 +43,7 @@ export class User {
   phoneNumber: string;
 
   @Column({ type: "text", name: "postal_adress" })
-  postalAdress: string;
+  postalAddress: string;
 
   @OneToMany(() => Cart, (cart) => cart.user)
   carts: Cart[];
